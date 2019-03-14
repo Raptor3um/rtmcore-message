@@ -1,29 +1,29 @@
-# Ravencoin Message Verification and Signing for Ravencore
+# Raptoreum Message Verification and Signing for rtmcore
 
 
 
 
-ravencore-message adds support for verifying and signing ravencoin messages in [Node.js](http://nodejs.org/) and web browsers.
+rtmcore-message adds support for verifying and signing raptoreum messages in [Node.js](http://nodejs.org/) and web browsers.
 
-See [the main ravencore repo](https://github.com/underdarkskies/ravencore) for more information.
+See [the main rtmcore repo](https://github.com/Raptor3um/rtmcore) for more information.
 
 ## Getting Started
 
 ```sh
-npm install ravencore-message
+npm install rtmcore-message
 ```
 
 ```sh
-bower install ravencore-message
+bower install rtmcore-message
 ```
 
 To sign a message:
 
 ```javascript
-var ravencore = require('ravencore-lib');
-var Message = require('ravencore-message');
+var rtmcore = require('rtmcore-lib');
+var Message = require('rtmcore-message');
 
-var privateKey = ravencore.PrivateKey.fromWIF('5K2DxqJ9kLFL3hF3KEWDftAig3TyAXenDxpr27PaLBieuSFo5PQ');
+var privateKey = rtmcore.PrivateKey.fromWIF('5K2DxqJ9kLFL3hF3KEWDftAig3TyAXenDxpr27PaLBieuSFo5PQ');
 var signature = Message('hello, world').sign(privateKey);
 ```
 
@@ -37,8 +37,8 @@ var verified = Message('hello, world').verify(address, signature);
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/underdarkskies/ravencore/blob/master/CONTRIBUTING.md) on the main ravencore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/Raptor3um/rtmcore/blob/master/CONTRIBUTING.md) on the main rtmcore repo for information about how to contribute.
 
 ## License
 
-Code released under [the MIT license](https://github.com/underdarkskies/ravencore/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/Raptor3um/rtmcore/blob/master/LICENSE).

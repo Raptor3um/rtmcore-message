@@ -1,4 +1,4 @@
-var ravencore = require('ravencore-lib');
-ravencore.Message = require('./lib/message');
+var rtmcore = require('rtmcore-lib');
+rtmcore.Message = require('./lib/message');
 
-module.exports = ravencore.Message;
+module.exports = rtmcore.Message;
